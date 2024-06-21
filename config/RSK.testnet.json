@@ -1,0 +1,18 @@
+{
+   "network":"testnet",
+   "node":{
+      "network":"testnet",
+      "address":"https://puppynet.shibrpc.com",
+      "log_level":"debug",
+      "graph_graphql_query_timeout":10,
+      "graph_sql_statement_timeout":10,
+      "graph_graphql_max_depth":16,
+      "graph_graphql_max_complexity":1500000,
+      "restart":"always"
+   },
+   "RootstockEvent":{
+      "network":"testnet",
+      "address":"0x8b73111467242aa8829bb17765718c3749df472b",
+      "startBlock":4608613
+   }
+}

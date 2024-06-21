@@ -1,0 +1,92 @@
+
+ñédataSources:
+  - kind: ethereum/contract
+    mapping:
+      abis:
+        - file:
+            /: /ipfs/Qmcmyuc5QLJfsNhfD7cSBk9WPZFejwZhAsgVzWuRR53V6g
+          name: Factory
+        - file:
+            /: /ipfs/QmS6XAUnvE6kLjpLM7Lh9FKs5URSVZnnavp44tJHHwW3xX
+          name: Pair
+        - file:
+            /: /ipfs/QmYXbMLVQavtmP1cGJzgUuwe91VGCfRfP7L3ZAPMNzahNt
+          name: BoneToken
+        - file:
+            /: /ipfs/QmTbFuUNTTEkRVQZPUofpbCofEVRniQhdzy2LZWn6vZL8i
+          name: ERC20
+        - file:
+            /: /ipfs/QmbHnhUFZa6qqqRyubUYhXntox1TCBxqryaBM1iNGqVJzT
+          name: ERC20SymbolBytes
+        - file:
+            /: /ipfs/QmQCP6Pdp1MqpwRv2qoPHuUTwZGy7Q3eDHg4w5kzwE9mBj
+          name: ERC20NameBytes
+      apiVersion: 0.0.6
+      entities:
+        - Factory
+      eventHandlers:
+        - event: 'PairCreated(indexed address,indexed address,address,uint256)'
+          handler: onPairCreated
+      file:
+        /: /ipfs/QmWH2mvJgXu4CmNKoT1aJCfaardNLEA2Y8qnbNw4VEc6TL
+      kind: ethereum/events
+      language: wasm/assemblyscript
+    name: Factory
+    network: puppynet
+    source:
+      abi: Factory
+      address: '0xb9E15055807FcDd1f845c1eBF04BF7A176379faA'
+      startBlock: 591909
+description: Exchange
+features:
+  - fullTextSearch
+repository: 'https://github.com/graphprotocol/example-subgraph'
+schema:
+  file:
+    /: /ipfs/QmWY7yvL2BPLekycpRUzw7HqhCJy1qdpJ9RGAPmEZUtyB3
+specVersion: 0.0.6
+templates:
+  - kind: ethereum/contract
+    mapping:
+      abis:
+        - file:
+            /: /ipfs/QmS6XAUnvE6kLjpLM7Lh9FKs5URSVZnnavp44tJHHwW3xX
+          name: Pair
+        - file:
+            /: /ipfs/Qmcmyuc5QLJfsNhfD7cSBk9WPZFejwZhAsgVzWuRR53V6g
+          name: Factory
+      apiVersion: 0.0.6
+      entities:
+        - Bundle
+        - Burn
+        - LiquidityPosition
+        - LiquidityPositionSnapshot
+        - Mint
+        - Pair
+        - Swap
+        - Sync
+        - Token
+        - Transaction
+        - User
+      eventHandlers:
+        - event: 'Mint(indexed address,uint256,uint256)'
+          handler: onMint
+        - event: 'Burn(indexed address,uint256,uint256,indexed address)'
+          handler: onBurn
+        - event: >-
+            Swap(indexed address,uint256,uint256,uint256,uint256,indexed
+            address)
+          handler: onSwap
+        - event: 'Transfer(indexed address,indexed address,uint256)'
+          handler: onTransfer
+        - event: 'Sync(uint112,uint112)'
+          handler: onSync
+      file:
+        /: /ipfs/QmdKw473aHopG2p5ayBWeQ38ksk6f55vMnkZAAgFfm8zQ8
+      kind: ethereum/events
+      language: wasm/assemblyscript
+    name: Pair
+    network: puppynet
+    source:
+      abi: Pair
+é
