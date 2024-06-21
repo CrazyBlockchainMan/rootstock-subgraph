@@ -10,9 +10,9 @@ dataSources:
     name: Factory
     network: testnet
     source:
-      address: '0xF4396db3eCd62c0109d2DeFeb14766DFe810A016'
+      address: '0x09B458C7E80529b29FF2cd5720440ca2E6e94e3d'
       abi: Factory
-      startBlock: 2591909
+      startBlock: 5247330
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
