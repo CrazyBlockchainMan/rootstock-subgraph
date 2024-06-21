@@ -14,7 +14,7 @@ export const BIG_INT_ONE = BigInt.fromI32(1)
 
 export const BIG_INT_ZERO = BigInt.fromI32(0)
 
-export const FACTORY_ADDRESS = Address.fromString('0xb9E15055807FcDd1f845c1eBF04BF7A176379faA')
+export const FACTORY_ADDRESS = Address.fromString('0x09B458C7E80529b29FF2cd5720440ca2E6e94e3d')
 
 export const NULL_CALL_RESULT_VALUE = '0x0000000000000000000000000000000000000000000000000000000000000001'
 
@@ -31,4 +31,4 @@ export const MINIMUM_USD_THRESHOLD_NEW_PAIRS = BigDecimal.fromString('0')
 // minimum liquidity for price to get tracked
 export const MINIMUM_LIQUIDITY_THRESHOLD_ETH = BigDecimal.fromString('0')
 
-export const WETH_ADDRESS = Address.fromString('0x0c477ae2e8e5ce1666468e44b066542fa46f9f72')
+export const WETH_ADDRESS = Address.fromString('0x69fE5cEc81D5eF92600c1a0dB1f11986aB3758ab')
