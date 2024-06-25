@@ -3,11 +3,11 @@ services:
   graph-node:
     image: graphprotocol/graph-node:v0.27.0
     ports:
-      - '8000' # Only exposing internal ports, no external mapping
-      - '8001'
-      - '8020'
-      - '8030'
-      - '8040'
+      - '8000:8000'
+      - '8001:8001'
+      - '8020:8020'
+      - '8030:8030'
+      - '8040:8040'
     expose:
       - 8000
       - 8001
