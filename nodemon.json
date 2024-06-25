@@ -14,7 +14,7 @@
     "subgraph.yaml"
   ],
   "env": {
-    "NODE_ENV": "development"
+    "NODE_ENV": "production"
   },
   "ext": "json,ts, graphql, yaml, yml"
 }
